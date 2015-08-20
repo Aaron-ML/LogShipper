@@ -84,7 +84,7 @@ $MailMessage.Body = ""
 $MailMessage.Subject = $ServerName +" Log-Shipper Job Failed"
 $MailMessage.from = ($ServerName + "@example.com")
 # SMTP Settings
-$SmtpClient.Host = "64.154.105.7"
+$SmtpClient.Host = "128.0.0.1 (replace with SMTP server)"
 $MailMessage.To.add("infrastructureTeam@example.com")
 
 ## Kill old debuglog and  recreate new
